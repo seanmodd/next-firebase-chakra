@@ -1,16 +1,34 @@
 import '@fontsource/raleway';
 import '@fontsource/poppins';
-import { createBreakpoints } from '@chakra-ui/theme-tools';
 import {
   extendTheme,
   withDefaultColorScheme,
-  theme as defaultTheme,
+  theme as baseTheme,
 } from '@chakra-ui/react';
 // 2. Extend the theme to include custom colors, fonts, etc
 
+const mytheme = extendTheme({
+  styles: {
+    global: {
+      // styles for the `body`
+      body: {
+        bg: 'gray.400',
+        color: 'white',
+      },
+      // styles for the `a`
+      a: {
+        color: 'teal.500',
+        _hover: {
+          textDecoration: 'underline',
+        },
+      },
+    },
+  },
+});
+
 const fonts = {
-  heading: 'Poppins',
-  body: 'Raleway',
+  heading: `'Poppins'`,
+  body: `'Raleway'`,
 };
 
 const colors = {

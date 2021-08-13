@@ -2,10 +2,10 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/auth/*": ["components/auth/*"],
-      "@/cloudFirestore/*": ["components/cloudFirestore/*"],
-      "@/realtimeDatabase/*": ["components/realtimeDatabase/*"],
-      "@/storage/*": ["components/storage/*"],
+
+
+
+
     }
   }
 }
