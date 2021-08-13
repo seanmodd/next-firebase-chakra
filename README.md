@@ -32,3 +32,4 @@ This is not meant to be a tutorial on how to use next.js or Firebase, but simply
 This is compatable with next.js v10+ and Firebase JavaScript v8+, which are currently the newest versions. May work with older versions.# finished-firebase
 # finished_nextjs-firebase
 # next-firebase-chakra
+# nextjs-reactbootstrap
