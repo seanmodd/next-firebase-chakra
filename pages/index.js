@@ -20,9 +20,11 @@ export default function Home() {
       <Card className="text-center p-3">
         <Heading color="brand.700">Welcome to nextjs</Heading>
         <Text>Hello Bro</Text>
-        <Link href="/">Click Me</Link>
+
         {/* <Button>idk</Button> */}
-        <Button>Button</Button>
+        <Button>
+          <Link href="/classes">Click Me</Link>
+        </Button>
       </Card>
     </div>
   );

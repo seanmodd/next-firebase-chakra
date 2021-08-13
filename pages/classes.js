@@ -1,15 +1,31 @@
-import { Heading } from '@chakra-ui/layout';
-import { useState } from 'react';
-import styles from '../styles/Home.module.css';
+import Head from 'next/head';
+import Card from 'react-bootstrap/Card';
 
-const Classes = () => {
-  const [item, setItem] = useState([]);
+import { Heading, Text } from '@chakra-ui/react';
+import styles from 'styles/Home.module.css';
+import Link from 'next/link';
+import { Button } from 'react-bootstrap';
 
+// import '@fontsource/poppins';
+
+export default function Home() {
   return (
-    <div>
-      <Heading className={styles.container}>Classes page</Heading>
+    <div className={styles.container}>
+      <Head>
+        <title>Create Next App</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      {/* <main className={styles.main}> */}
+      <Card className="text-center p-3">
+        <Heading color="brand.700">Classes Page</Heading>
+        <Text>Hello Bro</Text>
+
+        {/* <Button>idk</Button> */}
+        <Button>
+          <Link href="/">Home Page</Link>
+        </Button>
+      </Card>
     </div>
   );
-};
-
-export default Classes;
+}
